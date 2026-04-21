@@ -101,32 +101,4 @@ So to build it, you will need to:
 3. Select the correct ESP32 board and serial settings
 4. Review UART pin usage before flashing
 
-## Status
-
-This looks like a working prototype rather than a fully finished product.
-
-Notable implementation details:
-
-- UDP receive and MAVLink decode are implemented for debugging
-- Heartbeat transmission is implemented
-- Controller-to-MAVLink and controller-to-SBUS output are implemented
-- UART-to-UDP MAVLink forwarding appears incomplete and placeholder in `receiveMAVLinkData()`
-
-## Suggested Improvements
-
-- Move Wi-Fi credentials and network settings into a separate config header
-- Add a proper build environment file such as `platformio.ini`
-- Document board selection and wiring
-- Clarify the intended `Serial2`/SBUS hardware topology
-- Complete the UART-to-UDP MAVLink forwarding path
-- Add a license file
-- Add diagrams for data flow and pin connections
-
-## Suggested GitHub Description
-
-`ESP32 Bluetooth gamepad to MAVLink RC override, SBUS output, and Wi-Fi UDP bridge for drone control and telemetry experiments.`
-
-## Suggested Topics
-
-`esp32`, `arduino`, `mavlink`, `sbus`, `bluepad32`, `drone`, `uav`, `ground-station`, `gamepad`, `udp`
 
